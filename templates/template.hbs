@@ -59,6 +59,9 @@
                                     <li>Vulnerable: {{vulnerable_versions}}</li>
                                     <li>Patched: {{patched_versions}}</li>
                                     <li>CVSS: {{metadata.exploitability}}</li>
+                                    {{#each findings}}{{#each paths}}
+                                    <li>{{this}}</li>
+                                    {{/each}}{{/each}}
                                 </ul>
                             </div>
                         </div>
